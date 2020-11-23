@@ -1,0 +1,107 @@
+@import "../../variables.scss";
+
+.container {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.scriptsSection {
+  width: 100%;
+}
+
+.scriptsWrapper {
+  width: 100%;
+}
+
+.scriptsHolder {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .scriptsSection {
+    margin-top: 150px;
+  }
+  .scriptsHolder {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .scriptsSection {
+    margin-top: 150px;
+  }
+  .scriptsHolder {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .scriptsSection {
+    margin-top: 150px;
+  }
+  .scriptsHolder {
+    flex-direction: column;
+    margin-top: 70px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .scriptsSection {
+    margin-top: 200px;
+  }
+  .scriptsHolder {
+    width: 90%;
+    margin-left: 5%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 150px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .scriptsSection {
+    margin-top: 200px;
+  }
+  .scriptsHolder {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 150px;
+    margin-bottom: 200px;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .scriptsHolder {
+    width: 70%;
+    margin-left: 15%;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .scriptsHolder {
+    width: 60%;
+    margin-left: 20%;
+  }
+}

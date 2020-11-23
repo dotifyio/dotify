@@ -1,0 +1,16 @@
+
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000248;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.line {
+  width: 200px;
+  height: 3px;
+  background-color: #FFCB5D;
+}

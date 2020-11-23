@@ -1,0 +1,102 @@
+@import "../../variables.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: white;
+  box-shadow: -5px 0 57px 0px rgba($color: #000000, $alpha: .05), 5px 0 57px 0px rgba($color: #000000, $alpha: .05);
+}
+
+.container:nth-child(even) {
+}
+
+.container::after {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: 0;
+  width: 100%;
+  height: 60px;
+  background: white;
+  transform: translateY(50%) skewY(-2deg);
+  z-index: 10;
+  box-shadow: 0 -6px 57px -57px rgba($color: #000000, $alpha: .05);
+}
+.container::before {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  width: 100%;
+  height: 50px;
+  background: white;
+  transform: translateY(50%) skewY(2deg);
+  z-index: 10;
+  box-shadow: 0 6px 57px -57px rgba($color: #000000, $alpha: .05);
+}
+
+.imageHolder {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($color: $main, $alpha: .2);
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.stats {
+  font-size: 55px;
+  color: $heading;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.title {
+  font-size: 20px;
+  color: $paragraph;
+  margin-top: 12px;
+  margin-bottom: 60px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    margin-left: 0%;
+    margin-bottom: 75px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container {
+    width: 48%;
+    margin-bottom: 80px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 23%;
+    margin-bottom: 0px;
+  }
+  .container:nth-child(even) {
+    margin-bottom: -40px;
+    margin-top: 40px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

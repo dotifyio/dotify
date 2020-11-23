@@ -1,0 +1,231 @@
+@import "../../variables.scss";
+
+.container {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.contactSection {
+  width: 100%;
+}
+
+.contactWrapper {
+  width: 100%;
+}
+
+.contactHolder {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 35px;
+  font-weight: bold;
+  color: $heading;
+  width: 80%;
+  margin-left: 10%;
+  text-align: left;
+  margin-top: 70px;
+}
+
+.supportText {
+  font-size: 20px;
+  color: $paragraph;
+  width: 80%;
+  margin-left: 10%;
+  text-align: left;
+}
+
+.email {
+  color: $main;
+  font-size: 22px;
+  font-weight: bold;
+  width: 80%;
+  margin-left: 10%;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.support {
+  display: flex;
+}
+
+.supportCard {
+  // border: 1px solid blue;
+  -webkit-box-shadow: -5px 15px 57px 0px rgba(0, 0, 0, 0.02);
+  -moz-box-shadow: -5px 15px 57px 0px rgba(0, 0, 0, 0.02);
+  box-shadow: -5px 15px 57px 0px rgba(0, 0, 0, 0.02);
+}
+
+.contactHolder {
+  height: 100%;
+  position: relative;
+}
+
+.supportCard:first-child {
+}
+
+.dots,
+.elipse {
+  position: absolute;
+}
+
+.dots {
+  top: 100%;
+  left: 20%;
+}
+
+.elipse {
+  top: 50%;
+  left: calc(50% - 170px);
+  transform: rotate(180deg);
+}
+
+.email > a {
+  text-decoration: none;
+  color: $main;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .contactSection {
+    margin-top: 150px;
+  }
+  .contactHolder {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 70px;
+    margin-bottom: 120px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .support {
+    width: 100%;
+    margin-top: 80px;
+    flex-direction: column;
+  }
+  .supportCard:first-child {
+    margin-bottom: 40px;
+  }
+  .elipse {
+    display: none;
+  }
+  .dots {
+    left: 30%;
+    top: 650px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .contactSection {
+    margin-top: 150px;
+  }
+  .contactHolder {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 70px;
+    margin-bottom: 120px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .support {
+    width: 100%;
+    margin-top: 80px;
+    flex-direction: column;
+  }
+  .supportCard {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .supportCard:first-child {
+    margin-bottom: 40px;
+  }
+  .elipse {
+    display: none;
+  }
+  .dots {
+    left: 30%;
+    top: 720px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .contactSection {
+    margin-top: 150px;
+  }
+  .contactHolder {
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 150px;
+  }
+  .supportCard:first-child {
+    margin-bottom: 60px;
+  }
+  .supportCard {
+    width: 70%;
+    margin-left: 15%;
+  }
+  .support {
+    margin-top: 90px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .contactSection {
+    margin-top: 200px;
+  }
+  .contactHolder {
+    width: 90%;
+    margin-left: 5%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 150px;
+    margin-bottom: 200px;
+  }
+  .support {
+    width: 45%;
+    height: auto;
+    justify-content: space-between;
+  }
+  .supportCard {
+    width: 100%;
+    margin-left: 0;
+  }
+  .supportCard:first-child {
+    margin-bottom: 50px;
+    margin-top: -150px;
+  }
+  .elipse {
+    display: block;
+    top: 50%;
+    left: calc(45% - 170px);
+  }
+  .dots {
+    top: 100%;
+    left: 20%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .contactSection {
+    margin-top: 200px;
+  }
+  .contactHolder {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 190px;
+  }
+  .elipse {
+    top: 50%;
+    left: calc(50% - 200px);
+  }
+}

@@ -1,0 +1,63 @@
+@import "../../variables.scss";
+
+.seeWorkButton {
+  background: none;
+  border: none;
+  padding: 12px 20px;
+  min-width: 260px;
+  height: 70px;
+  cursor: pointer;
+  transition: color 0.4s linear;
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 24px;
+  border-radius: 16px;
+  overflow: hidden;
+  text-align: left;
+  background-color: $main;
+  box-sizing: border-box;
+}
+.seeWorkButton::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  background-color: $secondary;
+  z-index: -1;
+  transition: transform 0.45s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  border-radius: 16px;
+  display: block;
+}
+.seeWorkButton::before {
+  transform: scaleX(0);
+}
+.seeWorkButton:hover::before {
+  transform: scaleX(1);
+}
+.seeWorkButton:focus {
+  outline: none;
+}
+
+.arrowIcon {
+  border-radius: 4px;
+  padding-left: 16px;
+  padding-right: 17px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: relative;
+  width: 30px;
+  border-radius: 20px;
+  background-color: rgba($color: #000000, $alpha: .2);
+  margin-left: 25px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .seeWorkButton {
+    margin-top: 50px;
+  }
+}

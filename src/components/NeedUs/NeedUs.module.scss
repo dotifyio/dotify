@@ -1,0 +1,143 @@
+@import "../../variables.scss";
+
+.container {
+  width: 100%;
+  height: 450px;
+  background-color: $heading;
+  position: relative;
+}
+
+.needUsHolder {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  position: absolute;
+  left: -65px;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  translate: (50%, 0);
+}
+
+.dots {
+  position: absolute;
+  bottom: 0;
+}
+
+.dots2 {
+  position: absolute;
+  top: 0;
+}
+
+.elipse {
+  position: absolute;
+  right: -140px;
+  top: 10px;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: white;
+  z-index: 10;
+}
+
+.aboveTitle {
+  padding: 7px 15px;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: $secondary;
+  background-color: rgba($color: $secondary, $alpha: .2);
+}
+
+.seeWorkButton {
+  background: none;
+  border: none;
+  padding: 12px 20px;
+  min-width: 260px;
+  height: 70px;
+  cursor: pointer;
+  transition: color 0.4s linear;
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 24px;
+  border-radius: 16px;
+  overflow: hidden;
+  text-align: left;
+  background-color: $secondary;
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+
+.arrowIcon {
+  border-radius: 4px;
+  padding-left: 16px;
+  padding-right: 17px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: relative;
+  width: 30px;
+  border-radius: 20px;
+  background-color: rgba($color: #000000, $alpha: .2);
+  margin-left: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 40px;
+  }
+  .circle {
+    display: none;
+  }
+  .dots {
+    right: 40px;
+  }
+  .dots2 {
+    left: 0px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .circle {
+    display: none;
+  }
+  .dots {
+    right: 60px;
+  }
+  .dots2 {
+    left: 40px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .circle {
+    display: block;
+  }
+  .dots2 {
+    left: 60px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .circle {
+    display: block;
+  }
+  .dots {
+    right: 90px;
+  }
+  .dots2 {
+    left: 180px;
+  }
+}

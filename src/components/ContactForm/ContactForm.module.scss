@@ -1,0 +1,209 @@
+@import "../../variables.scss";
+
+.formTitle {
+  font-size: 50px;
+  font-weight: bold;
+  color: $heading;
+  text-align: left;
+  margin-top: 0;
+}
+.formHolder {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  z-index: 900;
+  position: relative;
+}
+
+.formHolder > img {
+  position: absolute;
+}
+
+.dots {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.elipse {
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+.formHolder {
+  // border: 1px solid purple;
+  // transform: skewY(-15deg, 15deg);
+  position: relative;
+  z-index: 10;
+  -webkit-box-shadow: -5px 15px 57px 0px rgba(0, 0, 0, 0.02);
+  -moz-box-shadow: -5px 15px 57px 0px rgba(0, 0, 0, 0.02);
+  box-shadow: -5px 15px 57px 0px rgba(0, 0, 0, 0.02);
+}
+.formHolder::after {
+  content: "";
+  position: absolute;
+  top: -105px;
+  right: 0;
+  width: 100%;
+  height: 150px;
+  background: white;
+  transform: translateY(50%) skewY(-2deg);
+  -webkit-box-shadow: -5px 15px 57px -40px rgba(0, 0, 0, 0.02);
+  -moz-box-shadow: -5px 15px 57px -40px rgba(0, 0, 0, 0.02);
+  box-shadow: -5px 15px 57px -40px rgba(0, 0, 0, 0.02);
+  z-index: -1;
+}
+.formHolder::before {
+  content: "";
+  position: absolute;
+  bottom: 45px;
+  right: 0;
+  width: 100%;
+  height: 150px;
+  background: white;
+  transform: translateY(50%) skewY(2deg);
+  z-index: -1;
+  -webkit-box-shadow: -5px 15px 57px -40px rgba(0, 0, 0, 0.02);
+  -moz-box-shadow: -5px 15px 57px -40px rgba(0, 0, 0, 0.02);
+  box-shadow: -5px 15px 57px -40px rgba(0, 0, 0, 0.02);
+  // box-shadow: 0 -5px 15px 1px rgba($color: #ffffff, $alpha: .05);
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  // border: 1px solid pink;
+  flex-direction: column;
+}
+.inputField {
+  position: relative;
+  width: 250px;
+  height: 44px;
+  line-height: 44px;
+}
+.formInput {
+  border: none;
+  border-bottom: 2px solid $heading;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  transition: ease-in-out 0.2s;
+  position: relative;
+  font-size: 15px;
+}
+.formInput:focus {
+  outline: none;
+  border-bottom: 2px solid $secondary;
+}
+.formInput::placeholder {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+textarea {
+  resize: vertical;
+  font-size: 15px;
+}
+
+.submitButton {
+  background: none;
+  border: none;
+  padding: 12px 20px;
+  min-width: 260px;
+  height: 55px;
+  cursor: pointer;
+  transition: color 0.4s linear;
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 24px;
+  border-radius: 0px;
+  overflow: hidden;
+  text-align: center;
+  background-color: $main;
+  position: relative;
+  font-weight: bold;
+  margin-top: 30px;
+}
+.submitButton::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  background-color: $secondary;
+  z-index: -1;
+  transition: transform 0.45s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  border-radius: 0px;
+  display: block;
+}
+.submitButton::before {
+  transform: scaleX(0);
+}
+.submitButton:hover::before {
+  transform: scaleX(1);
+}
+.submitButton:focus {
+  outline: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .formHolder {
+    width: 100%;
+    margin-top: 65px;
+  }
+  .formContainer {
+    width: 90%;
+    margin-left: 5%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .knowUsTitle,
+  .formTitle {
+    font-size: 35px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .formHolder {
+    width: 100%;
+    margin-top: 70px;
+  }
+  .formContainer {
+    width: 90%;
+    margin-left: 5%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .formHolder {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .formContainer {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .formHolder {
+    width: 48%;
+  }
+  .formHolder {
+    margin-top: 0;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

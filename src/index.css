@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+input, button, textarea {
+  font-family: 'DM Sans', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.rec {
+  height: 456px;
+  z-index: 100;
+}
+
+.rec > div {
+}
+
+.react-multi-carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.react-multi-carousel-list  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.container {
+}
+
+.container-with-dots {
+  position: absolute;
+  top: 0;
+  left: 0;
+} 
+
+.container-with-dots {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.react-multi-carousel-list, .container-with-dots, .carousel {
+  position: absolute;
+}
+
+.rec > div:focus {
+  outline: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .rec {
+    height: 580px;
+    z-index: 100;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

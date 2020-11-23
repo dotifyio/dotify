@@ -1,0 +1,15 @@
+.container {
+  width: 30%;
+  margin-bottom: 50px;
+}
+
+.container > p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000248;
+  text-align: left;
+}
+
+.container > img {
+  width: 100%;
+}

@@ -1,0 +1,143 @@
+@import "../../variables.scss";
+
+.container {
+  position: relative;
+}
+
+.workImage {
+  /* border: 1px solid red; */
+}
+
+.infoHolder {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.imageBorder {
+  width: calc(100% - 10px);
+  height: 300px;
+  margin-top: -290px;
+  transition: ease-in-out 0.1s;
+  opacity: 1;
+  display: block;
+}
+
+.imageHolder > img {
+  transition: ease-in-out 0.1s;
+  z-index: 100;
+}
+
+.imageHolder > img:hover {
+  margin-left: 25px;
+}
+
+.workTitle {
+  text-align: left;
+  font-size: 26px;
+  color: $heading;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.workType {
+  color: $paragraph;
+  margin-top: 9px;
+  margin-bottom: 0px;
+}
+
+.price {
+  color: $heading;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    /* border: 1px solid green; */
+    margin-bottom: 30px;
+  }
+  .imageHolder > img {
+    width: 100%;
+  }
+  .infoHolder {
+    margin-top: 10px;
+  }
+  .imageBorder {
+    height: 250px;
+    margin-top: -240px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container {
+    width: 390px;
+    /* border: 1px solid green; */
+    margin-bottom: 30px;
+  }
+  .imageHolder > img {
+    width: 100%;
+  }
+  .infoHolder {
+    margin-top: 25px;
+  }
+  .imageBorder {
+    height: 300px;
+    margin-top: -290px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 270px;
+    /* border: 1px solid green; */
+    margin-bottom: 60px;
+  }
+  .imageBorder {
+    height: 215px;
+    margin-top: -205px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 295px;
+    margin-bottom: 60px;
+  }
+  .imageBorder {
+    height: 235px;
+    margin-top: -225px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .container {
+    width: 340px;
+  }
+  .imageBorder {
+    height: 275px;
+    margin-top: -265px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .container {
+    width: 365px;
+  }
+  .imageBorder {
+    height: 290px;
+    margin-top: -280px;
+  }
+}

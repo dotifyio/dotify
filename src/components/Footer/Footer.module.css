@@ -1,0 +1,122 @@
+
+
+.container {
+  width: 100%;
+  background-color: #FAFAFB;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background-color: #702FFF;
+  border-radius: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.icon:hover {
+  background-color: #FFCB5D;
+}
+
+.icon > img {
+  width: 17px;
+}
+
+.footerHolder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialHolder {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+.socialHolder > div:not(:last-child) {
+  margin-right: 25px;
+}
+
+.title {
+  color: #000248;
+  font-size: 55px;
+  font-weight: bold;
+  letter-spacing: -7px;
+  margin-top: 0;
+}
+
+.about {
+  color: #757589;
+  font-size: 20px;
+  margin-bottom: 70px;
+}
+
+.copyright {
+  color: #757589;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .footerHolder {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .footerHolder {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .footerHolder {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .footerHolder {
+    width: 70%;
+    margin-left: 15%;
+  }
+  .container {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .footerHolder {
+    width: 60%;
+    margin-left: 20%;
+  }
+}

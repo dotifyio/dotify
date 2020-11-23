@@ -1,0 +1,16 @@
+
+
+.saveButton {
+  width: 200px;
+  height: 55px;
+  margin-top: 30px;
+  background-color: #FFCB5D;
+  color: #000248;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  bottom: -80px;
+  right: 0;
+  cursor: pointer;
+}

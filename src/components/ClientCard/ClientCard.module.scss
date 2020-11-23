@@ -1,0 +1,108 @@
+@import "../../variables.scss";
+
+.container {
+}
+
+.imageHolder {
+  position: relative;
+}
+
+.imageHolder > img {
+  width: 80%;
+  margin-left: 10%;
+  z-index: 30;
+  box-shadow: -6px 19px 22px rgba($color: #000000, $alpha: .16);
+}
+
+.svgShape {
+  width: 75%;
+  position: absolute;
+  left: 0; 
+  right: 0; 
+  z-index: -1;
+  margin-left: auto; 
+  margin-right: auto; 
+  transform: rotate(0deg);
+}
+
+.shape {
+  width: 100%;
+}
+
+.clientInfo {
+  width: 100%;
+  margin-left: 55px;
+  margin-top: 30px;
+}
+
+.clientTitle {
+  text-align: left;
+  font-size: 26px;
+  color: $heading;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.buildWith {
+  color: $paragraph;
+  margin-top: 9px;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .clientInfo {
+    width: 100%;
+    margin-left: 12%;
+  }
+  .clientInfo > p {
+    padding-left: 5%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container {
+    width: 390px;
+    margin-bottom: 40px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 270px;
+    margin-bottom: 70px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 305px;
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .container {
+    width: 350px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .container {
+    width: 370px;
+  }
+}

@@ -1,0 +1,100 @@
+@import "../../variables.scss";
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.sideBar {
+  width: 25%;
+  min-height: 100vh;
+  background-color: $heading;
+  padding-top: 70px;
+}
+
+.menuWrapper {
+}
+
+.menuHolder {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.menuButton {
+  border: none;
+  background-color: $heading;
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 25px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.menuButton:active {
+  border-bottom: 1px solid $secondary;
+}
+
+.menuButton:focus {
+  outline: none;
+  border-bottom: 2px solid $secondary;
+}
+
+.mainContent {
+  width: 75%;
+  height: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 25%;
+  background-color: $light-grey;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.headerContentHolder {
+  width: 90%;
+  margin-left: 5%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  text-align: left;
+  color: $heading;
+  font-size: 55px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+.subTitle {
+  text-align: left;
+  color: $heading;
+  font-size: 22px;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+.logOutButton {
+  font-size: 24px;
+  padding: 19px 30px;
+  border-radius: 16px;
+  border: none;
+  background-color: $secondary;
+  cursor: pointer;
+}
+
+.contentWrapper {
+  width: 100%;
+  height: 100%;
+}
