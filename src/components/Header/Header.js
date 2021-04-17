@@ -42,7 +42,6 @@ function Header(props) {
   const getSpecialItem = () => {
     axios("https://dotify-9c677.firebaseio.com/specialItem.json")
       .then(res => {
-        console.log(res);
         setSpecialItem({
           name: res.data.name,
           link: res.data.link,

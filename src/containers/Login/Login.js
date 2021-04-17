@@ -18,11 +18,10 @@ function Login() {
 
     fire.auth().signInWithEmailAndPassword(email, password)
       .then(ul => {
-        console.log("Successfully loged in");
         setIsAuth(true)
       })
       .catch(err => {
-        console.log(err, "Error");
+        
       })
   }
 

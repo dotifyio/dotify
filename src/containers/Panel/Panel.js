@@ -3,12 +3,12 @@ import fire from '../../firebase'
 
 import classes from './Panel.module.scss'
 import Logo from '../../assets/Logo.svg'
-// import General from './General/General'
-// import HomepagePanel from './HomepagePanel/HomepagePanel'
-// import ThemesPanel from './ThemesPanel/ThemesPanel'
-// import ScriptsPanel from './ScriptsPanel/ScriptsPanel'
-// import ClientsPanel from './ClientsPanel/ClientsPanel'
-// import TestimonialsPanel from './TestimonialsPanel/TestimonialsPanel' 
+import General from './General/General'
+import HomepagePanel from './HomepagePanel/HomepagePanel'
+import ThemesPanel from './ThemesPanel/ThemesPanel'
+import ScriptsPanel from './ScriptsPanel/ScriptsPanel'
+import ClientsPanel from './ClientsPanel/ClientsPanel'
+import TestimonialsPanel from './TestimonialsPanel/TestimonialsPanel' 
 
 function Panel() {
   const [mainContent, setMainContent] = useState("Testimonials")
@@ -19,26 +19,25 @@ function Panel() {
 
   const contentRenderHandler = (e) => {
     setMainContent(e.target.innerHTML)
-    console.log(mainContent);
   }
 
   const renderContent = () => {
-    // switch (mainContent) {
-    //   case "General":
-    //     return <General />
-    //   case "Homepage":
-    //     return <HomepagePanel />
-    //   case "Themes":
-    //     return <ThemesPanel />
-    //   case "Scripts":
-    //     return <ScriptsPanel />
-    //   case "Clients":
-    //     return <ClientsPanel />
-    //   case "Testimonials":
-    //     return <TestimonialsPanel />
-    //   default:
-    //     break;
-    // }
+    switch (mainContent) {
+      case "General":
+        return <General />
+      case "Homepage":
+        return <HomepagePanel />
+      case "Themes":
+        return <ThemesPanel />
+      case "Scripts":
+        return <ScriptsPanel />
+      case "Clients":
+        return <ClientsPanel />
+      case "Testimonials":
+        return <TestimonialsPanel />
+      default:
+        break;
+    }
   }
 
   return (
@@ -74,8 +73,7 @@ function Panel() {
 
       {/* Main Content */}
       <div className={classes.contentWrapper}>
-        {/* {renderContent()} */}
-        Panel
+        {renderContent()}
       </div>
     </div>
       

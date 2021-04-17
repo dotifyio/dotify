@@ -1,0 +1,68 @@
+
+
+.homePanelHolder {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hrLine {
+  position: absolute;
+  width: 100%;
+  background-color: #d8d8d8;
+  height: 1px;
+  bottom: -10px;
+  left: 0;
+}
+
+.formWrapper {
+  width: 48%;
+  position: relative;
+}
+
+.formHolder {
+  margin-top: 40px;
+}
+
+.selectHolder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.select {
+  width: 55%;
+  font-size: 18px;
+  height: 40px;
+  background-color: #FAFAFB;
+  padding-left: 10px;
+  border: 2px solid #EBEBEB;;
+}
+
+.input {
+  width: 120px;
+  height: 40px;
+  background-color: #FAFAFB;
+  border: 2px solid #EBEBEB;;
+  padding-left: 10px;
+}
+
+.inputHolder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0px;
+  font-size: 18px;
+}
+
+.inputHolder > p {
+  margin-top: 0;
+  margin-bottom: 0;
+}

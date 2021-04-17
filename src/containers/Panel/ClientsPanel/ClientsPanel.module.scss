@@ -1,0 +1,127 @@
+.ourClients {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 50px;
+}
+
+.headerHolder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clientsHolder {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.addClientContainer {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 50px;
+  position: relative;
+}
+
+.formHolder {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form {
+  width: 50%;
+}
+
+.inputHolder {
+  display: flex;
+  font-size: 18px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input {
+  width: 70%;
+  font-size: 18px;
+  height: 40px;
+  padding-left: 10px;
+  background-color: #FFFFFF;
+  border: 2px solid #EBEBEB;
+}
+
+.dropHolder {
+  width: 40%;
+  height: 100%;
+  font-size: 18px;
+  text-align: left;
+}
+
+.dropBox {
+  background-color: #E8E8E8;
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hrLine {
+  position: absolute;
+  width: 100%;
+  background-color: #d8d8d8;
+  height: 1px;
+  bottom: -15px;
+  left: 0;
+}
+
+.selectHolder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+
+.select {
+  width: 55%;
+  font-size: 18px;
+  height: 40px;
+  background-color: #FAFAFB;
+  padding-left: 10px;
+  border: 2px solid #EBEBEB;;
+}
+
+.table {
+  width: 100%;
+}
+
+.headerRow {
+}
+
+.theader {
+  text-align: left;
+  background-color: #B5B5B5;
+  border: none;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.bdata {
+  border: 1px solid #CFCFCF;
+  text-align: left;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  color: #757589;
+  font-size: 18px;
+}

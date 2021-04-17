@@ -28,8 +28,6 @@ function App() {
         setUser(null);
       }
     });
-
-    console.log(user);
   };
 
   let routes = (

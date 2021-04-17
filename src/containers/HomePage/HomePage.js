@@ -30,8 +30,8 @@ import Arrow from "../../assets/Union 2.png";
 import Dots2 from "../../assets/Home-02.svg";
 import Elipse from "../../assets/Inner-Page3.svg";
 import ClientReview from "../../components/ClientReview/ClientReview";
+import Image from '../../assets/Image.png'
 import Axios from "axios";
-import Work from '../../assets/Image.png'
 
 function HomePage() {
   const contactRef = useRef();
@@ -53,7 +53,7 @@ function HomePage() {
   const getMovementsStats = () => {
     Axios.get("https://dotify-9c677.firebaseio.com/movement.json")
       .then(res => setMovements(res.data))
-      .catch(err => console.log(err))
+      .catch(err => {})
   }
 
   return (
@@ -149,9 +149,8 @@ function HomePage() {
             color="#1198FB"
             bgColor="#ECF7FF"
           />
-
           <div className={classes.ourWorkHolder}>
-            <WorkCard image={Work} name="InstaSave" price="17" label="Build with InstaSave" link="https://codecanyon.net/item/download-instagram-videos-photos-and-albums/27557597" />
+            <WorkCard image={Image} price={'17'} name="InstaSave" label="Web Application" link={'https://codecanyon.net/item/download-instagram-videos-photos-and-albums/27557597'} />
             {/* <WorkCard />
             <WorkCard /> */}
           </div>
@@ -269,7 +268,7 @@ function HomePage() {
         </div>
       </div>
 
-      {/* <div className={classes.reviewsSection}>
+      <div className={classes.reviewsSection}>
         <div className={classes.reviewsWrapper}>
           <SectionHeader
             aboveTitle="tesimonials"
@@ -299,7 +298,7 @@ function HomePage() {
               itemClass=""
               keyBoardControl
               minimumTouchDrag={80}
-              renderButtonGroupOutside={false}
+              renderButtonGroupOutside={true}
               renderDotsOutside={false}
               responsive={{
                 desktop: {
@@ -338,7 +337,7 @@ function HomePage() {
               </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
       <div className={classes.needUsSection}>
         <NeedUs isOnHomePage={true} contactRef={contactRef} />

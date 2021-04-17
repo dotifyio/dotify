@@ -40,13 +40,19 @@ function ShowcasePage() {
   useEffect(() => {
     document.title = "Showcase - Dotify";
 
-    // if (Object.values(clients).length === 0) {
-    //   getClients();
-    // }
+    if (Object.values(clients).length === 0) {
+      getClients();
+    }
   }, []);
 
   const getClients = () => {
-    
+    Axios.get("https://dotify-9c677.firebaseio.com/clients.json")
+      .then((res) => {
+        if (res.data) {
+          setClients(res.data);
+        }
+      })
+      .catch((err) => {});
   };
 
   return (
@@ -64,11 +70,18 @@ function ShowcasePage() {
           />
 
           <div className={classes.showcaseHolder}>
+            <ClientCard img={Client} client="InstaSave" buildWith="InstaSave" />
             {/* { Object.values(clients).length > 0 ? Object.values(clients).map(client => (
               <ClientCard img={client.image} client={client.name} buildWith={client.buildWith} link={client.link} />
             )) : null } */}
 
+            {/* <ClientCard img={Client} client="InstaSave" buildWith="InstaSave" />
             <ClientCard img={Client} client="InstaSave" buildWith="InstaSave" />
+            <ClientCard img={Client} client="InstaSave" buildWith="InstaSave" />
+            <ClientCard img={Client} client="InstaSave" buildWith="InstaSave" />
+            <ClientCard img={Client} client="InstaSave" buildWith="InstaSave" />
+            <ClientCard img={Client} client="InstaSave" buildWith="InstaSave" />
+            <ClientCard img={Client} client="InstaSave" buildWith="InstaSave" /> */}
           </div>
         </div>
 

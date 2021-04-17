@@ -15,14 +15,19 @@ function ScriptsPage() {
   useEffect(() => {
     document.title = 'Scripts - Dotify';
 
-    // if(Object.keys(scripts).length === 0) {
-    //   getScripts();
-    //   console.log("works");
-    // }
+    if(Object.keys(scripts).length === 0) {
+      getScripts();
+    }
   }, [])
 
   const getScripts = async () => {
-    
+    await Axios.get("https://dotify-9c677.firebaseio.com/scripts.json")
+      .then(res => {
+        if (res.data) {
+          setScripts(res.data)
+        }
+      })
+      .catch(err => err)
   }
 
   return (
@@ -40,9 +45,10 @@ function ScriptsPage() {
           />
 
           <div className={classes.scriptsHolder}>
+            <WorkCard image={Image} link={'https://codecanyon.net/item/download-instagram-videos-photos-and-albums/27557597'} name={"InstaSave"} label={"Web application"} price={"17"} />
             
-            {/* { Object.values(scripts).length > 0 ? Object.values(scripts).map(script => ( */}
-              <WorkCard image={Image} link='https://codecanyon.net/item/download-instagram-videos-photos-and-albums/27557597' name="InstaSave" label="Web application" price="17" />
+            {/* { Object.values(scripts).length > 0 ? Object.values(scripts).map(script => (
+            )) : null } */}
 
           </div>
         </div>

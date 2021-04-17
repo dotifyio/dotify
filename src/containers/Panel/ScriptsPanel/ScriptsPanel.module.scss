@@ -1,0 +1,93 @@
+.ourScripts {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 50px;
+}
+
+.scriptsHolder {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.headerHolder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addScriptContainer {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 50px;
+  position: relative;
+}
+
+.formHolder {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form {
+  width: 50%;
+}
+
+.inputHolder {
+  display: flex;
+  font-size: 18px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input {
+  width: 70%;
+  font-size: 18px;
+  height: 40px;
+  padding-left: 10px;
+  background-color: #FFFFFF;
+  border: 2px solid #EBEBEB;
+}
+
+.priceInput {
+  width: 40%;
+  height: 40px;
+  font-size: 18px;
+  padding-left: 10px;
+  background-color: #FFFFFF;
+  border: 2px solid #EBEBEB;
+}
+
+.dropHolder {
+  width: 40%;
+  height: 100%;
+  font-size: 18px;
+  text-align: left;
+}
+
+.dropBox {
+  background-color: #E8E8E8;
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hrLine {
+  position: absolute;
+  width: 100%;
+  background-color: #d8d8d8;
+  height: 1px;
+  bottom: -15px;
+  left: 0;
+}
+
+input[type="file"] {
+  display: none;
+}

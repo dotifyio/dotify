@@ -8,7 +8,6 @@ function WorkCard(props) {
   const [imgHover, setImgHover] = useState(false);
 
   const toggle = () => {
-    console.log("heelloo");
     setImgHover(true);
   };
 
